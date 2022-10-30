@@ -3,8 +3,8 @@ import 'package:desafio_mockup/logo.dart';
 import 'package:desafio_mockup/tinder_page.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class MoneyPage extends StatelessWidget {
+  const MoneyPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

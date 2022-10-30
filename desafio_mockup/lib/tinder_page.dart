@@ -3,7 +3,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:desafio_mockup/custom_tinder_button.dart';
-import 'package:desafio_mockup/home_page.dart';
+import 'package:desafio_mockup/money_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -121,7 +121,7 @@ class TinderPage extends StatelessWidget {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const HomePage(),
+                      builder: (context) => const MoneyPage(),
                     ),
                   );
                 },
