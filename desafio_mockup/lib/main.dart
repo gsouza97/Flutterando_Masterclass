@@ -1,3 +1,4 @@
+import 'package:desafio_mockup/login_page.dart';
 import 'package:desafio_mockup/money_page.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MoneyPage(),
+      home: const LoginPage(),
     );
   }
 }

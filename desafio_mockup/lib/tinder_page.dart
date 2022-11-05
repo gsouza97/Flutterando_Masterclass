@@ -3,7 +3,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:desafio_mockup/custom_tinder_button.dart';
+import 'package:desafio_mockup/login_page.dart';
 import 'package:desafio_mockup/money_page.dart';
+import 'package:desafio_mockup/redirect_button_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -116,24 +118,15 @@ class TinderPage extends StatelessWidget {
                 style: TextStyle(color: Colors.white, fontSize: 16),
               ),
               const SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MoneyPage(),
-                    ),
-                  );
-                },
-                child: const Text(
-                  'Login to Money App',
-                  style: TextStyle(
-                    decoration: TextDecoration.underline,
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
+              const RedirectButtonWidget(
+                destinationPage: MoneyPage(),
+                pageName: 'Money App',
+                color: Colors.white,
+              ),
+              RedirectButtonWidget(
+                destinationPage: LoginPage(),
+                pageName: 'Login',
+                color: Colors.white,
               )
             ],
           ),
